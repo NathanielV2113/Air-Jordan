@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js"></script>
+        <title>Air Jordan - Login | Signup</title>
+        <link rel="shortcut icon" href="./assets/Jumpman_logo.jpg">
+    </head>
+    <body>
+        <header>
+            <a href="#"><img src="./assets/Jumpman_logo.jpg" alt="jumpman logo" class="logo"></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./cart.html">MyCart</a></li>
+                </ul>
+                <button id="login_btn">Login</button>
+            </nav>
+            <div id="mobile">
+                <i id="bar" class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <main id="loginPage">
+            <div class="login-reg">
+                <div class="form">
+                    <form action="" class="login">
+                        <h2>Log in</h2>
+                        <div class="input">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <input type="submit" value="Log in" class="login-btn">
+                        <p class="text-socials">Or continue with social platform</p>
+                        <div class="socials">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <p class="acc">Don't have an account? <a href="#" id="reg2">Register</a></p>
+                    </form>
+    
+                    <form action="" class="register">
+                        <h2>Register</h2>
+                        <div class="input">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <input type="submit" value="Sign up" class="login-btn">
+                        <p class="text-socials">Or continue with social platform</p>
+                        <div class="socials">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <p class="acc">Already have an account? <a href="#" id="log2">Login</a></p>
+                    </form>
+                </div>
+                <div class="panels">
+                    <div class="panel left">
+                        <div class="content">
+                            <h3>Member of Air Jordan?</h3>
+                        <p>
+                            Unlock exclusive benefits and savings as a valued member of our store community. <br>
+                            Embrace personalized service and discover a shopping experience tailored just for you. <br>
+                            Join us today and indulge in the luxury of choice, with every visit bringing new delights.
+                        </p>
+                        <button id="log-btn" class="pnl-btn">Login</button>
+                        </div>
+                    </div>
+
+                    <div class="panel right">
+                        <div class="content">
+                            <h3>New to Air Jordan?</h3>
+                            <p>
+                                Welcome to our store, where quality meets affordability and every visit feels like home. <br>
+                                Explore our curated collection and discover your new favorites. <br>
+                                Join us in creating moments that matter, one happy customer at a time!
+                            </p>
+                        <button id="reg-btn" class="pnl-btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
