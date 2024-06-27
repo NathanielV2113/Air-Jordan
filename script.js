@@ -22,10 +22,6 @@ function ordered() {
     }
 }
 
-function thankyou() { 
-    swal("Response Submitted!", "", "success");
-}
-
 function shopping(){
     window.location.replace("./shop.html");
 }

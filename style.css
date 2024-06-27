@@ -1243,10 +1243,11 @@ textarea.input1{
     margin-top: 10px;
 }
 .red-btn{
-    background-color: rgb(255, 82, 44);
+    background-color: var(--white);
+    color: var(--black);
 }
 .gray-btn{
-    background-color: rgba(242, 195, 5, 0.948);
+    background-color: var(--red);
 }
 .btn5:hover{
     opacity: .6;
