@@ -22,14 +22,23 @@
 
     function init(){
         var bar = document.getElementById('bar');
-        bar.onclick = function(){
-            const nav = document.querySelector(".nav");
-            nav.classList.toggle('active');
-        }
-
         var login = document.getElementById('login_btn');
-        login.onclick = function(){
-            window.location.replace("./login.html");
+        var shop = document.getElementById('shop-now');
+        if (bar) {
+            bar.onclick = function(){
+                const nav = document.querySelector(".nav");
+                nav.classList.toggle('active');
+            }
+        }
+        if (login){
+            login.onclick = function(){
+                window.location.replace("./login.html");
+            }
+        }
+        if (shop) {
+            shop.onclick = function(){
+                window.location.replace("./shop.html");
+            }
         }
 
         const log_btn = document.querySelector("#log-btn");
@@ -38,19 +47,27 @@
         const reg_btn2 = document.querySelector("#reg2");
         const container = document.querySelector(".login-reg");
 
-        reg_btn.addEventListener("click", () =>{
-            container.classList.add("register-mode");
-        })
-        log_btn.addEventListener("click", () =>{
-            container.classList.remove("register-mode");
-        })
-
-        reg_btn2.addEventListener("click", () =>{
-            container.classList.add("register-mode2");
-        })
-        log_btn2.addEventListener("click", () =>{
-            container.classList.remove("register-mode2");
-        })
+        if (reg_btn) {
+            reg_btn.addEventListener("click", () =>{
+                container.classList.add("register-mode");
+            })
+        }
+        if(log_btn) {
+            log_btn.addEventListener("click", () =>{
+                container.classList.remove("register-mode");
+            })    
+        }
+        if (reg_btn2) {
+            reg_btn2.addEventListener("click", () =>{
+                container.classList.add("register-mode2");
+            })
+        }
+        if (log_btn2) {
+            log_btn2.addEventListener("click", () =>{
+                container.classList.remove("register-mode2");
+            })
+        }
+        
     }
   
   })(window, document, undefined);
