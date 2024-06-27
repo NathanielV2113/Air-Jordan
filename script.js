@@ -1,3 +1,35 @@
+function reg() { 
+    swal("Success!", "Your data have been saved. Thank you!", "success");
+    for(var i=0; i<1000; i++) {
+        window.location.replace("./login.html");
+    }
+}
+
+function loggedin() { 
+    swal("You have logged in successfuly!", "", "success");
+    for(var i=0; i<1000; i++) {
+        window.location.replace("./index.html");
+    }
+}
+function added() { 
+    swal("Added to cart!", "", "success");
+}
+
+function ordered() { 
+    swal("Order Placed!", "", "success");
+    for(var i=0; i<1000; i++) {
+        window.location.replace("./shop.html");
+    }
+}
+
+function thankyou() { 
+    swal("Response Submitted!", "", "success");
+}
+
+function shopping(){
+    window.location.replace("./shop.html");
+}
+
 (function(window, document, undefined) {
 
     window.addEventListener('scroll', reveal);
